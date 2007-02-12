@@ -1,5 +1,5 @@
 Summary:	Flasm - assembler/disassembler of Flash ActionScript bytecode
-Summary(pl):	Flasm - asembler/disasembler bajtkodu Flash ActionScript
+Summary(pl.UTF-8):   Flasm - asembler/disasembler bajtkodu Flash ActionScript
 Name:		flasm
 Version:	1.61
 Release:	0.1
@@ -20,13 +20,13 @@ optimizations on the disassembled code by hand or adjust the code as
 you wish. Flasm then applies your changes to the original SWF,
 replacing original actions.
 
-%description -l pl
-Flasm disasembluje ca³y SWF wraz ze znacznikami czasu i zdarzeniami.
-Patrz±c na wynik mo¿na nauczyæ siê jak dzia³a kompilator Flasha,
-poprawiaj±c swoj± znajomo¶æ ActionScriptu. Mo¿na tak¿e dokonywaæ
-rêcznie pewnych optymalizacji w zdisasemblowanym kodzie lub
-modyfikowaæ kod. Flasm nastêpnie aplikuje zmiany w oryginalnym SWF-ie,
-zastêpuj±c oryginalne dzia³ania.
+%description -l pl.UTF-8
+Flasm disasembluje caÅ‚y SWF wraz ze znacznikami czasu i zdarzeniami.
+PatrzÄ…c na wynik moÅ¼na nauczyÄ‡ siÄ™ jak dziaÅ‚a kompilator Flasha,
+poprawiajÄ…c swojÄ… znajomoÅ›Ä‡ ActionScriptu. MoÅ¼na takÅ¼e dokonywaÄ‡
+rÄ™cznie pewnych optymalizacji w zdisasemblowanym kodzie lub
+modyfikowaÄ‡ kod. Flasm nastÄ™pnie aplikuje zmiany w oryginalnym SWF-ie,
+zastÄ™pujÄ…c oryginalne dziaÅ‚ania.
 
 %prep
 %setup -q -c
