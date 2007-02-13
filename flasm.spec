@@ -1,5 +1,5 @@
 Summary:	Flasm - assembler/disassembler of Flash ActionScript bytecode
-Summary(pl.UTF-8):   Flasm - asembler/disasembler bajtkodu Flash ActionScript
+Summary(pl.UTF-8):	Flasm - asembler/disasembler bajtkodu Flash ActionScript
 Name:		flasm
 Version:	1.61
 Release:	0.1
