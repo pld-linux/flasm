@@ -1,14 +1,17 @@
 Summary:	Flasm - assembler/disassembler of Flash ActionScript bytecode
 Summary(pl.UTF-8):	Flasm - asembler/disasembler bajtkodu Flash ActionScript
 Name:		flasm
-Version:	1.61
-Release:	0.1
+Version:	1.63
+Release:	1
 License:	freeware
 Group:		Development
-Source0:	http://www.nowrap.de/download/%{name}16linux.tgz
-# Source0-md5:	57940311b5d55e48757fcd63f86d9243
-Source1:	%{name}.sh
+Source0:	http://www.nowrap.de/download/%{name}16src.zip
+# Source0-md5:	28a4586409061b385d1cd27d3f120c0b
 URL:		http://www.nowrap.de/flasm.html
+BuildRequires:	bison
+BuildRequires:	flex
+BuildRequires:	gperf
+BuildRequires:	zlib-devel
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,6 +34,10 @@ zastępując oryginalne działania.
 %prep
 %setup -q -c
 
+%build
+%{__make} \
+	CFLAGS="%{rpmcflags}"
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
@@ -42,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE.TXT CHANGES.TXT flasm.html classic.css
+%doc CHANGES.TXT LICENSE.TXT flasm.html classic.css
 %doc flasm.ini
 %attr(755,root,root) %{_bindir}/flasm
