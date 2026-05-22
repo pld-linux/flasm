@@ -2,7 +2,7 @@ Summary:	Flasm - assembler/disassembler of Flash ActionScript bytecode
 Summary(pl.UTF-8):	Flasm - asembler/disasembler bajtkodu Flash ActionScript
 Name:		flasm
 Version:	1.63
-Release:	1
+Release:	2
 License:	freeware
 Group:		Development
 Source0:	http://www.nowrap.de/download/%{name}16src.zip
@@ -36,7 +36,7 @@ zastępując oryginalne działania.
 
 %build
 %{__make} \
-	CFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags} %{rpmcppflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
